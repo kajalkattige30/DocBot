@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    
+    <category>
+    <pattern>*</pattern>
+    <template>no match</template>
+  </category>    
+  <category>
+    <pattern>hi</pattern>
+    <template>hello</template>
+  </category>
+  
+  <category>
+      <pattern>What is *</pattern>
+      
+    <template>
+      <think><set name = "disease"><star/></set></think>
+      <condition name = "disease">
+      <li value = "cancer">
+      Cancer is a generic term for a large group of diseases that can affect any part of the body. Other terms used are malignant tumours and neoplasms. One defining feature of cancer is the rapid creation of abnormal cells that grow beyond their usual boundaries, and which can then invade adjoining parts of the body and spread to other organs, the latter process is referred to as metastasizing. Metastases are a major cause of death from cancer.
+      </li>
+      <li value = "diabetes">
+      Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood sugar.
+      </li>
+      <li>no match</li>
+      </condition>
+     </template>
+  </category> 
+  
+    <category>
+      <pattern>How can we prevent *</pattern>
+      
+          <template>
+            <think><set name = "disease"><star/></set></think>
+            <condition name = "disease">
+            <li value = "cancer">
+         Between 30–50% of cancers can currently be prevented by avoiding risk factors and implementing existing evidence-based prevention strategies. The cancer burden can also be reduced through early detection of cancer and management of patients who develop cancer. Many cancers have a high chance of cure if diagnosed early and treated adequately.
+            </li>
+            <li value = "diabetes">
+      Simple lifestyle measures have been shown to be effective in preventing or delaying the onset of type 2 diabetes. To help prevent type 2 diabetes and its complications, people should:
+
+      achieve and maintain healthy body weight;
+      be physically active – at least 30 minutes of regular, moderate-intensity activity on most days. More activity is required for weight control;
+      eat a healthy diet, avoiding sugar and saturated fats intake; and
+      avoid tobacco use – smoking increases the risk of diabetes and cardiovascular diseases.            </li>
+            <li>no match</li>
+            </condition>
+         </template>
+
+  </category>
+  
+    <category>
+      <pattern>What is the treatment for *</pattern>
+
+          <template>
+            <think><set name = "disease"><star/></set></think>
+            <condition name = "disease">
+            <li value = "cancer">
+            A correct cancer diagnosis is essential for adequate and effective treatment because every cancer type requires a specific treatment regimen that encompasses one or more modalities such as surgery, radiotherapy, and chemotherapy.  
+            </li>
+            <li value = "diabetes">
+            Treatment of diabetes involves diet and physical activity along with lowering blood glucose and the levels of other known risk factors that damage blood vessels. Tobacco use cessation is also important to avoid complications.     
+            </li>
+            <li>no match</li>
+            </condition>
+         </template>
+      
+  </category>
+  
+</aiml>
